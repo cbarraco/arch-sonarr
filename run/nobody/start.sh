@@ -4,4 +4,4 @@
 export XDG_CONFIG_HOME="/config/xdg"
 
 # run app
-/usr/lib/sonarr/bin/Sonarr -nobrowser -data=/config
+/usr/lib/sonarr/bin/Sonarr.exe -nobrowser -data=/config

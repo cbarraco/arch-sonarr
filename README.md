@@ -2,6 +2,10 @@
 
 [Sonarr](https://sonarr.tv/)
 
+**Note**
+
+I upgraded the container to use sonarr phantom in the meantime until the official image is updated with proper distribution and testing.
+
 **Description**
 
 Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.
@@ -23,7 +27,7 @@ docker run -d \
     -e UMASK=<umask for created files> \
     -e PUID=<uid for user> \
     -e PGID=<gid for user> \
-    binhex/arch-sonarr
+    cbarraco/arch-sonarr
 ```
 
 Please replace all user variables in the above command defined by <> with the correct values.
@@ -45,7 +49,7 @@ docker run -d \
     -e UMASK=000 \
     -e PUID=0 \
     -e PGID=0 \
-    binhex/arch-sonarr
+    cbarraco/arch-sonarr
 ```
 
 **Notes**
